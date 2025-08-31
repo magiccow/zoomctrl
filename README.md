@@ -10,3 +10,14 @@ The Arduino needs to be like a Leonardo with the Atmega32u4 processor. I used a 
 Youtube video: https://youtu.be/qR4f6KmZdcM
 
 
+For applications other than Zoom, insert your keycodes into the b1.isPressed() section (b2.isPressed etc), e.g. for Microsoft Teams mute is CTRL+SHIFT+M, or video on/off with CTRL+SHIFT+O, which could be rendered as:
+
+Keyboard.press(KEY_LEFT_CTRL)
+Keyboard.press('M')
+
+(Note that the 'M' is upper case, so this implicitly does a shift)
+
+
+
+
+
